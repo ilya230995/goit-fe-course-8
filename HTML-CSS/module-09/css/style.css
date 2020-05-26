@@ -1,0 +1,276 @@
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit
+}
+html {
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --main-font: "Montserrat", sans-serif;
+    --secondary-font: "Roboto", sans-serif;
+}
+/* HEADER */
+header {
+    background-color: rgb(26, 25, 21);
+    background-image: url(../img/BG_1.png);
+    background-position:center;
+    background-size: cover;
+    padding-top: 28px;
+    padding-bottom: 140px;  
+}
+
+.authorization_list {
+    display: flex;
+    justify-content: center;
+}
+.authorization_list_item_btn {
+    font-family: var(--main-font);
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    background: none;
+    width: 90px;
+    height: 36px;
+    outline: none;
+}
+
+.authorization_list_item:first-child {
+    margin-right: 26px;
+}
+.logotype {
+    width: max-content;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.top_row {
+    margin-bottom: 26px;
+}
+.promo_title {
+    font-family: var(--main-font);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 9px;
+}
+.promo_title_descr {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.text_br {
+    display: block;
+}
+.find_partner {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 40px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 80);
+    color: #ffffff;
+    text-align: center;
+    padding-top: 12px;
+}
+/* PARTNERS */
+.partners {
+    padding-top: 66px;
+    padding-bottom: 20px;
+}
+.slogan_row {
+    margin-bottom: 10px;
+}
+.company_slogan,
+.partner_name {
+    font-family: var(--main-font);
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+}
+.company_slogan { 
+    font-size: 22px;
+}
+.partners_row {
+    margin-bottom: 24px;
+}
+.image_wrapper {
+    width: 122px;
+    height: 122px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 15px;
+}
+.image_wrapper::after {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 37px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(255, 78, 80);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.image_wrapper_red::after {
+    background-color: rgb(255, 78, 80);
+    background-image: url(../img/icons/red.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image_wrapper_yellow:after {
+    background-color: rgb(255, 165, 7);
+    background-image: url(../img/icons/yellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image_wrapper_green:after {
+    background-color: rgb(28, 215, 173);
+    background-image: url(../img/icons/green.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image_wrapper_blue:after {
+    background-color: rgb(78, 115, 219);
+    background-image: url(../img/icons/blue.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.partner_name {
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+.about_partner {
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+}
+.other_partners_btn {
+    display: block;
+    margin: 0 auto;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    color: #ff4e50;
+    border: 2px solid rgb(255, 78, 80);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 280px;
+    height: 40px;
+}
+@media (max-width: 767px) {
+    .logotype {
+        display: block;
+        margin: 0 auto;
+    }
+    .authorization_coulumn {
+        margin-bottom: 126px;
+    }
+    .partner_card:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+@media (min-width: 768px) {
+    header {
+        background-image: url(../img/BG_2.png);
+        padding-top: 48px;
+        padding-bottom: 234px;  
+    }
+    .top_row {
+        flex-direction: row-reverse;
+        margin-bottom: 142px;
+    }
+    .authorization_list {
+        justify-content: flex-end;
+    }
+    .promo_title {
+        font-size: 52px;
+        margin-bottom: 24px;
+    }
+    .text_br_descr {
+        display: inline;
+    }
+    .promo_title_descr {
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    .find_partner {
+        width: 226px;
+        height: 40px;
+    }
+    .partners {
+        padding-top: 69px;
+        padding-bottom: 46px;
+    }
+    .slogan_row {
+        margin-bottom: 32px;
+    }
+    .partners_row {
+        margin-bottom: 34px;
+    }
+    .other_partners_btn {
+        width: 193px;
+        height: 40px;
+}
+    .partner_card:not(:nth-last-child(-n+2)) {
+        margin-bottom: 22px
+    }
+}
+@media (max-width: 991px) {
+    .authorization_list_item_btn:focus {
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 30px;
+    }
+}
+@media (min-width: 992px) {
+    header {
+        background-image: url(../img/BG_3.png);
+    }
+    .authorization_list_item_btn:hover {
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 30px;
+    }
+}
